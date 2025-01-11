@@ -1,0 +1,47 @@
+.paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 16px;
+  }
+  
+  .pageNavButton {
+    background: #007bff;
+    border: none;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .pageNavButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pageNavButton:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  .pageItem {
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .pageItem:hover {
+    background-color: #e9e9e9;
+  }
+  
+  .selected {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
